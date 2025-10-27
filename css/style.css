@@ -52,6 +52,11 @@ body {
     height: 100%;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 .flexbox {
     display: flex;
 }
@@ -115,7 +120,6 @@ body {
     box-shadow: inset 0 2px 0 0px #0065FC;
 }
 
-/****** Search bar ***********/
 .location-search-bar {
     font-size: 18px;
 }
@@ -163,7 +167,6 @@ body {
     color: white;
 }
 
-/****** Content ***********/
 #content,
 #content > #intro {
     gap: 40px;
@@ -206,7 +209,6 @@ a {
     color: var(--main-bg-color)
 }
 
-/****** Filtres ***********/
 #filters {
     gap: 15px;
 }
@@ -234,7 +236,6 @@ a {
     background: #DEEBFF;
 }
 
-/****** Availability count ***********/
 #availability-count {
     gap: 10px;
 }
@@ -246,7 +247,6 @@ a {
     border: solid 1px #D9D9D9;
 }
 
-/****** Hebergements And Populaires ***********/
 #hosts-and-popular {
     justify-content: space-between;
 }
@@ -258,7 +258,6 @@ a {
     box-sizing: border-box;
 }
 
-/****** Hebergements ***********/
 .hosts {
     width: 65%;
     justify-content: space-between;
@@ -271,12 +270,8 @@ a {
     gap: 30px;
 }
 
-.hosts-row {
-    gap: 30px;
-}
-
-.hosts-row a,
-.hosts-row .card {
+.hosts-cards a,
+.hosts-cards .card {
     flex: 1;
 }
 
@@ -309,7 +304,6 @@ a {
     font-size: 18px;
 }
 
-/****** Populaires ***********/
 .popular {
     width: 32%;
 }
@@ -349,7 +343,6 @@ a {
     margin-bottom: 5px;
 }
 
-/****** Activités ***********/
 #activities {
     padding: 30px;
 }
@@ -385,7 +378,6 @@ a {
     font-size: 16px;
 }
 
-/****** Footer ***********/
 footer {
     background: #F2F2F2;
 }
@@ -404,8 +396,6 @@ footer .sub-cat * {
     margin: 0;
     font-size: 16px;
 }
-
-/* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
@@ -561,7 +551,10 @@ footer .sub-cat * {
         background: white;
     }
 
-    .hosts-cards .hosts-row,
+    .hosts-cards {
+        grid-template-columns: 1fr;
+    }
+
     .popular-cards,
     .activities-cards,
     footer,
