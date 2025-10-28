@@ -1,49 +1,3 @@
-* {
-    font-family: 'Raleway', sans-serif;
-    scroll-behavior: smooth;
-}
-
-:root {
-    --main-color: #0065FC;
-    --main-bg-color: #F2F2F2;
-    --filter-bg-color: #DEEBFF;
-    
-    --safe-padding: 20px;
-    --inner-safe-padding: 15px;
-
-    --h1-font-size: 22px;
-}
-
-h1 {
-    font-size: var(--h1-font-size);
-}
-
-.fa-solid {
-    color: var(--main-color);
-}
-
-body {
-    margin: 0;
-}
-
-#main-container {
-    max-width: 1440px;
-    padding: 0 50px;
-    box-sizing: border-box;
-}
-
-#main-title {
-    gap: 5px;
-}
-
-#main-title * {
-    margin: 0;
-}
-
-.card-subtitle {
-    font-size: 14px;
-}
-
 .fullw {
     width: 100%;
 }
@@ -88,6 +42,52 @@ body {
 
 .rounded {
     border-radius: 100px;
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
+    
+    --safe-padding: 20px;
+    --inner-safe-padding: 15px;
+
+    --h1-font-size: 22px;
+}
+
+h1 {
+    font-size: var(--h1-font-size);
+}
+
+.fa-solid {
+    color: var(--main-color);
+}
+
+body {
+    margin: 0;
+}
+
+#main-container {
+    max-width: 1440px;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+#main-title {
+    gap: 5px;
+}
+
+#main-title * {
+    margin: 0;
+}
+
+.card-subtitle {
+    font-size: 14px;
 }
 
 #header {
