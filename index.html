@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,39 +12,34 @@
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/style.css">
 </head>
-
-<body class="flexbox flex-hcentered">
+<body class="flexbox flex-hcentered nomargin">
     <div id="main-container" class="fullw">
         <header id="header" class="fullw flexbox-col">
             <h1><a href="#"><img src="images/logo/Booki.png" class="logo" alt="Booki"></a></h1>
-            <nav id="navbar" class="flexbox flex-vcentered">
-                <a href="#hosts-and-popular" class="nav-btn fullh flexbox flex-vcentered">Hébergement</a>
-                <a href="#activities" class="nav-btn fullh flexbox flex-vcentered">Activités</a>
+            <nav id="navbar" class="flexbox flex-vcentered fullw-mobile navbar-gap">
+                <a href="#hosts-and-popular" class="nav-btn fullh flexbox flex-vcentered justify-center-mobile">Hébergement</a>
+                <a href="#activities" class="nav-btn fullh flexbox flex-vcentered justify-center-mobile">Activités</a>
             </nav>
         </header>
-
         <main id="content" class="flexbox-col">
             <section id="intro" class="flexbox-col">
-                <div id="main-title" class="flexbox-col">
-                    <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-                    <p>En plein centre-ville ou en pleine nature</p>
+                <div id="main-title" class="flexbox-col inner-side-safe-padding-mobile">
+                    <h2 class="nomargin">Trouvez votre hébergement pour des vacances de rêve</h2>
+                    <p class="nomargin">En plein centre-ville ou en pleine nature</p>
                 </div>
-
-                <div class="location-search-bar-container">
-                    <form class="location-search-bar flexbox" action="#">
+                <div class="location-search-bar-container inner-side-safe-padding-mobile justify-center-mobile">
+                    <form class="location-search-bar flexbox fullw-mobile justify-center-mobile" action="#">
                         <div class="location-icon flexbox flex-vcentered flex-hcentered"><i
                                 class="fa-solid fa-location-dot"></i></div>
-                        <input type="text" value="Marseille, France" name="location-search-input"
-                            class="side-soft-padding">
-                        <button type="submit" class="search side-soft-padding">Rechercher</button>
-                        <button type="submit" class="search-mobile side-soft-padding"><i
+                        <input type="text" value="Marseille, France" name="location-search-input" class="side-soft-padding noborder">
+                        <button type="submit" class="search side-soft-padding noborder">Rechercher</button>
+                        <button type="submit" class="search-mobile side-soft-padding noborder"><i
                                 class="fa-solid fa-magnifying-glass"></i></button>
                     </form>
                 </div>
-
-                <div id="filters" class="flexbox flex-vcentered">
-                    <h3 class="title">Filtres</h3>
-                    <div class="filter-buttons-container flexbox">
+                <div id="filters" class="flexbox flex-vcentered inner-side-safe-padding-mobile nogap-mobile">
+                    <h3 class="title fullw-mobile">Filtres</h3>
+                    <div class="filter-buttons-container flexbox fullw-mobile">
                         <button class="filter-button side-soft-padding flexbox flex-vcentered rounded"><i
                                 class="fa-solid fa-money-bill-1-wave"></i>Économique</button>
                         <button class="filter-button side-soft-padding flexbox flex-vcentered rounded"><i
@@ -56,20 +50,17 @@
                                 class="fa-solid fa-fire"></i>Nos pépites</button>
                     </div>
                 </div>
-
-                <div id="availability-count" class="flexbox flex-vcentered">
+                <div id="availability-count" class="flexbox flex-vcentered inner-side-safe-padding-mobile">
                     <i class="fa-solid fa-info flexbox flex-hcentered flex-vcentered rounded"></i>
                     <span>Plus de 500 logements sont disponibles dans cette ville</span>
                 </div>
             </section>
-
-            <div id="hosts-and-popular" class="flexbox">
-                <section class="hosts flexbox-col">
+            <div id="hosts-and-popular" class="flexbox nogap-mobile">
+                <section class="hosts flexbox-col standard-gap">
                     <div class="hosts-title">
                         <h2 class="section-title">Hébergements à Marseille</h2>
                     </div>
-
-                    <div class="hosts-cards grid">
+                    <div class="hosts-cards flexbox standard-gap">
                         <a href="#" class="flexbox-col">
                             <article class="card flexbox-col">
                                 <img src="./images/hebergements/fred-kleber.jpg"
@@ -90,7 +81,6 @@
                                 </div>
                             </article>
                         </a>
-
                         <a href="#" class="flexbox-col">
                             <article class="card flexbox-col">
                                 <img src="./images/hebergements/febrian-zakaria.jpg"
@@ -111,7 +101,6 @@
                                 </div>
                             </article>
                         </a>
-
                         <a href="#" class="flexbox-col">
                             <article class="card flexbox-col">
                                 <img src="./images/hebergements/reisetopia.jpg"
@@ -132,7 +121,6 @@
                                 </div>
                             </article>
                         </a>
-
                         <a href="#" class="flexbox-col">
                             <article class="card flexbox-col">
                                 <img src="./images/hebergements/annie-spratt.jpg"
@@ -153,7 +141,6 @@
                                 </div>
                             </article>
                         </a>
-
                         <a href="#" class="flexbox-col">
                             <article class="card flexbox-col">
                                 <img src="./images/hebergements/marcus-loke.jpg"
@@ -174,7 +161,6 @@
                                 </div>
                             </article>
                         </a>
-
                         <a href="#" class="flexbox-col">
                             <article class="card flexbox-col">
                                 <img src="./images/hebergements/nicate-lee.jpg"
@@ -196,17 +182,15 @@
                             </article>
                         </a>
                     </div>
-
                     <a class="hosts-show-more" href="#">Afficher plus</a>
                 </section>
-
                 <section class="popular">
                     <div class="popular-title flexbox">
                         <h2 class="section-title">Les plus populaires</h2>
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                     </div>
-                    <div class="popular-cards">
-                        <a href="#" class="card flexbox">
+                    <div class="popular-cards flexbox flexbox-col">
+                        <a href="#" class="card flexbox fullw-card">
                             <article class="flexbox fullw">
                                 <img src="./images/hebergements/emile-guillemot.jpg"
                                     alt="Image de la chambre d'hôtel montrant un lit">
@@ -226,7 +210,7 @@
                                 </div>
                             </article>
                         </a>
-                        <a href="#" class="card flexbox">
+                        <a href="#" class="card flexbox fullw-card">
                             <article class="flexbox fullw">
                                 <img src="./images/hebergements/aw-creative.jpg"
                                     alt="Image de la chambre d'hôtel montrant un lit">
@@ -246,7 +230,7 @@
                                 </div>
                             </article>
                         </a>
-                        <a href="#" class="card flexbox">
+                        <a href="#" class="card flexbox fullw-card">
                             <article class="flexbox fullw">
                                 <img src="./images/hebergements/febrian-zakaria2.jpg"
                                     alt="Image de la chambre d'hôtel montrant un lit">
@@ -269,31 +253,27 @@
                     </div>
                 </section>
             </div>
-
             <section id="activities">
                 <h2>Activités à Marseille</h2>
-                <div class="activities-cards flexbox">
+                <div class="activities-cards flexbox flex-col-mobile standard-gap">
                     <a href="#" class="card">
                         <article class="fullh flexbox-col">
                             <img src="images/activites/reno-laithienne.jpg" alt="paysage" class="fullw">
                             <h3 class="inner-side-safe-padding flexbox flex-vcentered">Vieux-Port</h3>
                         </article>
                     </a>
-
                     <a href="#" class="card">
                         <article class="fullh flexbox-col">
                             <img src="images/activites/paul-hermann.jpg" alt="paysage" class="fullw">
                             <h3 class="inner-side-safe-padding flexbox flex-vcentered">Fort de Pomègues</h3>
                         </article>
                     </a>
-
                     <a href="#" class="card">
                         <article class="fullh flexbox-col">
                             <img src="images/activites/kilyan-sockalingum.jpg" alt="paysage" class="fullw">
                             <h3 class="inner-side-safe-padding flexbox flex-vcentered">Parc national des Calanques</h3>
                         </article>
                     </a>
-
                     <a href="#" class="card">
                         <article class="fullh flexbox-col">
                             <img src="images/activites/florian-wehde.jpg" alt="paysage" class="fullw">
@@ -303,23 +283,20 @@
                 </div>
             </section>
         </main>
-
         <footer>
-            <nav class="flexbox">
-                <div class="sub-cat flexbox-col">
+            <nav class="flexbox flex-col-mobile">
+                <div class="sub-cat flexbox-col flex-col-mobile">
                     <h3>À propos</h3>
                     <a href="#">Fonctionnement du site</a>
                     <a href="#">Conditions générales</a>
                     <a href="#">Données et confidentialité</a>
                 </div>
-
-                <div class="sub-cat flexbox-col">
+                <div class="sub-cat flexbox-col flex-col-mobile">
                     <h3>Nos hébergements</h3>
                     <a href="#">Charte qualité</a>
                     <a href="#">Proposer votre hôtel</a>
                 </div>
-
-                <div class="sub-cat flexbox-col">
+                <div class="sub-cat flexbox-col flex-col-mobile">
                     <h3>Assistance</h3>
                     <a href="#">Centre d'aide</a>
                     <a href="#">Nous contacter</a>
@@ -328,5 +305,4 @@
         </footer>
     </div>
 </body>
-
 </html>
